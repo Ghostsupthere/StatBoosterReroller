@@ -12,7 +12,7 @@ class StatBoosterRerollPlayerScript : public PlayerScript
 public:
     StatBoosterRerollPlayerScript() : PlayerScript("StatBoosterRerollPlayerScript") { }
 
-    virtual bool CanCastItemUseSpell(Player* /*player*/, Item* /*item*/, SpellCastTargets const& /*targets*/, uint8 /*cast_count*/, uint32 /*glyphIndex*/) override;
+    virtual bool OnPlayerCanCastItemUseSpell(Player* /*player*/, Item* /*item*/, SpellCastTargets const& /*targets*/, uint8 /*cast_count*/, uint32 /*glyphIndex*/) override;
 };
 
 #endif // MODULE_STAT_BOOST_REROLL_H

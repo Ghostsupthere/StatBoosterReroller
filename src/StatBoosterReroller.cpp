@@ -1,6 +1,6 @@
 #include "StatBoosterReroller.h"
 
-bool StatBoosterRerollPlayerScript::CanCastItemUseSpell(Player* player, Item* item, SpellCastTargets const& targets, uint8 /*cast_count*/, uint32 /*glyphIndex*/)
+bool StatBoosterRerollPlayerScript::OnPlayerCanCastItemUseSpell(Player* player, Item* item, SpellCastTargets const& targets, uint8 /*cast_count*/, uint32 /*glyphIndex*/)
 {
     if (!item)
     {
